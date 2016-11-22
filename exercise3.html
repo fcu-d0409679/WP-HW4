@@ -1,0 +1,23 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+<title>Exercise 3</title>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js">
+</script>
+<script>
+	$(document).ready(function(){
+		$("button").click(function(){
+			var img = $("img");//把後面的選擇"div"
+        		img.animate({height: '300px', opacity: '0.4'}, "slow");
+        		img.animate({width: '300px', opacity: '0.8'}, "slow");
+        		img.animate({height: '100px', opacity: '0.4'}, "slow");
+        		img.animate({width: '100px', opacity: '0.8'}, "slow");
+		});
+	});
+</script>
+</head>
+<body>
+	<img src="handsome.jpg" width="300" height="500">
+	<button>Click me</button>
+</body>
+</html>

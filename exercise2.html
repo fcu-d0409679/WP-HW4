@@ -1,0 +1,37 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+<title>Exercise 2</title>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js">
+</script>
+<script>
+$(document).ready(function(){
+	$("input:first").click(function(){
+		$("p:first").hide()});
+
+	$("input").eq(1).click(function(){
+		$("#p_id").hide()});
+
+	$("input:last").click(function(){
+		$(".p_class").hide()});
+
+
+});
+
+</script>
+</head>
+<body>
+	<h1>Web Programming</h1>
+	<p>Hide Paragraph 1</p>
+
+	<p id="p_id">Hide Paragraph 2</p>
+
+	<p class="p_class">Hide Paragraph 3</p>
+
+	<input type="button" value="hide 1">
+
+	<input type="button" value="hide 2">
+
+	<input type="button" value="hide 3">
+</body>
+</html>
